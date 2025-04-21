@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>form</title>
+<script language="javascript">
+function f1()
+{
+document.getElementById("image").src="/home/user/Pictures/IMG-20220323-WA0007.jpg"
+
+}
+function f2()
+{var validRegex=/^[a-zA-Z0-9.!#$%&'*+=/?_{\}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+if(document.form1.pwd.value!=document.form1.cpwd.value)
+{
+alert("pwd and confirm pwd are not same");
+}
+
+else if(document.form1.phone.value.length!=10)
+{
+alert("invalid phone number");
+
+}
+else if(!(document.form1.email.value.match(validRegex)))
+{
+
+alert("invalid email id");
+}
+
+else
+{
+document.form1.submit();
+
+}
+}
+
+
+</script>
+</head>
+<body bgcolor=#779999>
+<table width=80% border=0 align="center">
+<tr><td width=20%><font size=6>ID:</font></td><td><input type=text size=6 style="font-size:32px" ></td>  
+
+</tr> 
+<tr><td width=20%><font size=6>Name:</font></td><td><input type=text size=6  style="font-size:32px" ></td>
+<td><input type="file" name="file"></td>
+
+
+
+</tr>
+<tr><td width=20%><font size=6>email@:</font></td>
+
+<td><input type=text size=6 style="font-size:32px" ></td>
+<td><font size=6> CGPA:</font><input type=range  size=1 style="font-size:32px" ></td>
+
+</tr>
+
+<tr><td width=20%><font size=6>Phone:</font></td><td><input type=text size=9 style="font-size:32px" ></td>
+
+<td><font size=6>Language known:</font>
+<input type="checkbox">Telugu
+
+<input type="checkbox">English
+<input type="checkbox">Hindhi
+<input type="checkbox">Tamil
+<input type="checkbox">kannada
+</td>
+
+
+</tr>
+
+<tr><td width=20%><font size=6>Address:</font></td><td><textarea row="5" col="40" size=30></textarea></td>
+
+
+
+<td><font size=6>Password:</font><input type=password size=9> </td>
+
+
+ 
+</tr>
+
+<tr><td width=20%><font size=6>D O B:</font></td><td><input type=date size=6 style="font-size:32px" ></td>
+<td><font size=6>conform Password:</font><input type=password size=9> </td>
+
+
+ </tr>
+
+<tr><td width=20%><font size=6>favorite color:</font></td><td><input type=color  size=6 style="font-size:32px" ></td>
+<td> <font size=6>Blog url:</font><input type=url size=10></td>
+
+</tr>
+
+
+<tr><td><font size=6> Gender :&nbsp;</font></td><td>Male<input type=radio  name="gender" >&nbsp;&nbsp;Female<input type=radio name="gender"></td></tr>
+
+<tr><td><font size=6> Branch:</font></td><td size=5>
+<select  size="4" >
+<option>CSC</option>
+<option>ECE</option>
+<option>MME</option>
+<option>CE</option>
+<option>MME</option>
+<option>EEE</option>
+</select>
+</td></tr>
+
+
+
+</table>
+
+<center >  <font ><input type="submit" name="button" value="submit" aling="center" size=30 >
+<input type="reset" name="button" value="reset" center size=30>
+<input type="button" name="button" value="print" size=30></font></center>
+
+</body></html>
